@@ -53,23 +53,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const hour = new Date().getHours();
-  if (hour >= 18 || hour < 6) {
-    document.body.classList.add("dark-theme");
-  }
-});
-
-
-
-
 
 document.addEventListener("DOMContentLoaded", function() {
-    document.querySelectorAll(".fade-in, .slide-in").forEach(element => {
-        element.style.opacity = "1";
-        element.style.transform = "translateY(0)";
-    });
-
     let contactForm = document.getElementById("contactForm");
 
     if (contactForm) {
