@@ -4,31 +4,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ouattara Khalil - Accueil</title>
+    <title>Portfolio - Khalil Ouattara</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
     <header>
-        <h1>Bienvenue sur mon Portfolio</h1>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="about.html">À propos</a></li>
-                <li><a href="skills.html">Compétences</a></li>
-                <li><a href="contact.html">Contact</a></li>
+        <nav class="navbar">
+            <div class="logo">
+                <span class="nom">OUATTARA </span> <span class="prenom">Khalil</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="main-content">
-        <h1 class="center m-5">Découvrez mon parcours, mes compétences et mes contacts.</h1>
-    </main>
 
-    <footer>
-        <p class="center">&copy; 2025 Khalil | Tous droits réservés.</p>
+    <section class="intro-section">
+        <div class="intro-content">
+            <div class="intro-text">
+                <h1>Je suis <span class="prenom">Khalil</span>, Développeur en devenir passionné par le web et le design
+                    !</h1>
+                <button class="see-button">Voir mes projets</button>
+            </div>
+            <div class="intro-image">
+                <img src="banniere.jpg" alt="Photo de Khalil">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about-section">
+        <h1>À propos</h1>
+        <div class="about-container">
+            <div class="about-text">
+                <p>Je m'appelle <strong>Khalil</strong>, passionné par la création de sites web modernes et interactifs.
+                </p>
+                <p>J’ai appris à coder grâce au programme D-CLiC, et je continue d’explorer HTML, CSS et JavaScript pour
+                    donner vie à mes idées.</p>
+                <p>Chaque projet est pour moi une occasion de progresser et d’exprimer ma créativité.</p>
+                <div class="cv-button">
+                    <a href="cv_khalil.pdf" download>Télécharger mon CV</a>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="developpeur.jpg" alt="Portrait de Khalil">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects" class="projects">
+        <h1>Mes Projets</h1>
+        <div class="card-container">
+            <div class="project-card">
+                <h2>Jeu du clic</h2>
+                <p>Un mini-jeu interactif en JavaScript qui teste votre vitesse de réaction.</p>
+                <button class="see-button">Voir</button>
+            </div>
+            <div class="project-card">
+                <h2>Quiz en ligne</h2>
+                <p>Un petit quiz dynamique conçu en HTML/CSS/JS avec score en temps réel.</p>
+                <button class="see-button">Voir</button>
+            </div>
+            <div class="project-card">
+                <h2>Jeu mémoire</h2>
+                <p>Un jeu de mémoire basé sur les événements DOM, fun et addictif !</p>
+                <button class="see-button">Voir</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="skills" class="skills-section">
+        <h1>Mes Compétences</h1>
+        <div class="skills-container">
+            <!-- Soft Skills -->
+            <div class="skills-card">
+                <h2>Soft Skills</h2>
+                <div class="skill-bar">
+                    <label>Gestion de projet</label>
+                    <div class="progress">
+                        <div class="bar fill-90"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <label>Résolution de problème</label>
+                    <div class="progress">
+                        <div class="bar fill-80"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <label>Adaptabilité</label>
+                    <div class="progress">
+                        <div class="bar fill-85"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hard Skills -->
+            <div class="skills-card">
+                <h2>Hard Skills</h2>
+                <div class="skill-bar">
+                    <label>HTML</label>
+                    <div class="progress">
+                        <div class="bar fill-95"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <label>CSS</label>
+                    <div class="progress">
+                        <div class="bar fill-90"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <label>JavaScript</label>
+                    <div class="progress">
+                        <div class="bar fill-80"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <label>VS Code</label>
+                    <div class="progress">
+                        <div class="bar fill-85"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="contact" class="contact-section">
+
+        <form id="contactForm">
+            <h1 style="text-align: center;">
+                Vous avez un <span class="highlight">projet en tête</span> ? N'hésitez pas à me <span
+                    class="highlight">contacter</span>
+            </h1>
+            <div class="row">
+                <div class="form-group">
+                    <label for="firstname">Prénom</label>
+                    <input type="text" id="firstname" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Nom</label>
+                    <input type="text" id="lastname" required>
+                </div>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="subject">Sujet</label>
+                <input type="text" id="subject" required>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="message">Message</label>
+                <textarea id="message" required></textarea>
+            </div>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p class="left">Designed by <span class="tech-stack">Khalil</span> with HTML, CSS & JavaScript</p>
+            <p class="right">Tous droits réservés – 2025</p>
+        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 
